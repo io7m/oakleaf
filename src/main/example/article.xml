@@ -19,6 +19,7 @@
 <Article xmlns="urn:com.io7m.oakleaf:1:0"
          xmlns:dc="http://purl.org/dc/elements/1.1/"
          xmlns:xi="http://www.w3.org/2001/XInclude">
+
   <Metadata>
     <dc:contributor>A Contributor</dc:contributor>
     <dc:creator>A Creator</dc:creator>
