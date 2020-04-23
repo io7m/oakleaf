@@ -31,6 +31,10 @@
         <directory>src/main/xsd</directory>
       </resource>
       <resource>
+        <directory>src/main/xml</directory>
+        <filtering>true</filtering>
+      </resource>
+      <resource>
         <directory>src/main/xsl</directory>
       </resource>
     </resources>

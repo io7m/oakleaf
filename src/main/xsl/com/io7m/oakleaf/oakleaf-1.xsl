@@ -490,6 +490,9 @@
         <head>
           <meta http-equiv="content-type"
                 content="application/xhtml+xml; charset=utf-8"/>
+
+          <xsl:copy-of select="document('version.xml')"/>
+
           <link rel="stylesheet"
                 type="text/css"
                 href="reset.css"/>
