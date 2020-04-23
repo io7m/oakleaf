@@ -19,6 +19,7 @@
 
   <properties>
     <io7m.api.previousVersion>0.0.1-SNAPSHOT</io7m.api.previousVersion>
+    <com.codacy.id></com.codacy.id>
   </properties>
 
   <build>
