@@ -1,7 +1,7 @@
 #!/bin/sh -ex
 
-rm -rf out
-mkdir -p out
+rm -rf target/example
+mkdir -p target/example
 
 xmllint \
 --xinclude \
@@ -21,9 +21,8 @@ xmllint \
 --noout \
 --schema target/classes/com/io7m/oakleaf/xhtml1-strict.xsd \
 index.xhtml
-mv index.xhtml out
+mv index.xhtml target/example
 
-cp src/main/css/com/io7m/oakleaf/reset.css   out/
-cp src/main/example/example.css              out/document.css
-cp src/main/css/com/io7m/oakleaf/oakleaf.css out/
-cp src/main/example/woods.jpg                out/
+cp target/classes/com/io7m/oakleaf/*.css  target/example/
+cp src/main/example/example.css           target/example/document.css
+cp src/main/example/woods.jpg             target/example/
