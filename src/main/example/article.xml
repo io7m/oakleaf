@@ -81,16 +81,97 @@
         nec nibh ac enim imperdiet vehicula quis sed diam. Vivamus ultricies arcu ut augue venenatis, eu mollis purus
         volutpat.
       </Paragraph>
+
       <FormalItem title="An item">
         <Verbatim>
           <xi:include href="article.xml"
                       parse="text"/>
         </Verbatim>
       </FormalItem>
+
       <FormalItem title="Woods">
         <Image source="woods.jpg"
                title="The Woods"/>
       </FormalItem>
+
+      <FormalItem title="Table">
+        <Table type="exampleData">
+          <Header>
+            <Column>Column 0</Column>
+            <Column>Column 1</Column>
+            <Column>Column 2</Column>
+          </Header>
+          <Body>
+            <Row>
+              <Cell>Cell 0</Cell>
+              <Cell>Cell 1</Cell>
+              <Cell>Cell 2</Cell>
+            </Row>
+            <Row>
+              <Cell>Cell 0</Cell>
+              <Cell>Cell 1</Cell>
+              <Cell>Cell 2</Cell>
+            </Row>
+            <Row>
+              <Cell>Cell 0</Cell>
+              <Cell>Cell 1</Cell>
+              <Cell>Cell 2</Cell>
+            </Row>
+            <Row>
+              <Cell>Cell 0</Cell>
+              <Cell>Cell 1</Cell>
+              <Cell>Cell 2</Cell>
+            </Row>
+          </Body>
+        </Table>
+      </FormalItem>
+
+      <FormalItem title="Ordered List">
+        <OrderedList>
+          <Item>Item 0</Item>
+          <Item>Item 1</Item>
+          <Item>Item 2</Item>
+          <Item>Item 3</Item>
+        </OrderedList>
+      </FormalItem>
+
+      <FormalItem title="Unordered List">
+        <UnorderedList>
+          <Item>Item 0</Item>
+          <Item>Item 1</Item>
+          <Item>Item 2</Item>
+          <Item>Item 3</Item>
+        </UnorderedList>
+      </FormalItem>
+
+      <FormalItem title="Nested List">
+        <UnorderedList>
+          <Item>
+            <OrderedList>
+              <Item>Item 0</Item>
+              <Item>Item 1</Item>
+              <Item>Item 2</Item>
+              <Item>Item 3</Item>
+            </OrderedList>
+          </Item>
+          <Item>
+            <UnorderedList>
+              <Item>Item 0</Item>
+              <Item>Item 1</Item>
+              <Item>
+                <OrderedList>
+                  <Item>Item 0</Item>
+                  <Item>Item 1</Item>
+                  <Item>Item 2</Item>
+                  <Item>Item 3</Item>
+                </OrderedList>
+              </Item>
+              <Item>Item 3</Item>
+            </UnorderedList>
+          </Item>
+        </UnorderedList>
+      </FormalItem>
+
       <Paragraph id="1594a5aa-a39b-4586-a840-f60f0aa4cc51">
         Sed convallis nulla vitae bibendum hendrerit. Curabitur purus lacus, mollis in felis porttitor, semper
         ullamcorper mauris. Etiam fringilla, magna vel rhoncus malesuada, leo nisl euismod arcu, sit amet scelerisque

@@ -45,109 +45,134 @@
   <xsl:template match="dc:creator"
                 mode="oakMetadataHeader">
     <xsl:element name="meta">
-      <xsl:attribute name="name" select="'DC.Title'"/>
-      <xsl:attribute name="content" select="."/>
+      <xsl:attribute name="name"
+                     select="'DC.Title'"/>
+      <xsl:attribute name="content"
+                     select="."/>
     </xsl:element>
   </xsl:template>
   <xsl:template match="dc:subject"
                 mode="oakMetadataHeader">
     <xsl:element name="meta">
-      <xsl:attribute name="name" select="'DC.Subject'"/>
-      <xsl:attribute name="content" select="."/>
+      <xsl:attribute name="name"
+                     select="'DC.Subject'"/>
+      <xsl:attribute name="content"
+                     select="."/>
     </xsl:element>
   </xsl:template>
   <xsl:template match="dc:description"
                 mode="oakMetadataHeader">
     <xsl:element name="meta">
-      <xsl:attribute name="name" select="'DC.Description'"/>
-      <xsl:attribute name="content" select="."/>
+      <xsl:attribute name="name"
+                     select="'DC.Description'"/>
+      <xsl:attribute name="content"
+                     select="."/>
     </xsl:element>
   </xsl:template>
   <xsl:template match="dc:publisher"
                 mode="oakMetadataHeader">
     <xsl:element name="meta">
-      <xsl:attribute name="name" select="'DC.Publisher'"/>
-      <xsl:attribute name="content" select="."/>
+      <xsl:attribute name="name"
+                     select="'DC.Publisher'"/>
+      <xsl:attribute name="content"
+                     select="."/>
     </xsl:element>
   </xsl:template>
   <xsl:template match="dc:contributor"
                 mode="oakMetadataHeader">
     <xsl:element name="meta">
-      <xsl:attribute name="name" select="'DC.Contributor'"/>
-      <xsl:attribute name="content" select="."/>
+      <xsl:attribute name="name"
+                     select="'DC.Contributor'"/>
+      <xsl:attribute name="content"
+                     select="."/>
     </xsl:element>
   </xsl:template>
   <xsl:template match="dc:date"
                 mode="oakMetadataHeader">
     <xsl:element name="meta">
-      <xsl:attribute name="name" select="'DC.Date'"/>
-      <xsl:attribute name="content" select="."/>
+      <xsl:attribute name="name"
+                     select="'DC.Date'"/>
+      <xsl:attribute name="content"
+                     select="."/>
     </xsl:element>
   </xsl:template>
   <xsl:template match="dc:type"
                 mode="oakMetadataHeader">
     <xsl:element name="meta">
-      <xsl:attribute name="name" select="'DC.Type'"/>
-      <xsl:attribute name="content" select="."/>
+      <xsl:attribute name="name"
+                     select="'DC.Type'"/>
+      <xsl:attribute name="content"
+                     select="."/>
     </xsl:element>
   </xsl:template>
   <xsl:template match="dc:format"
                 mode="oakMetadataHeader">
     <xsl:element name="meta">
-      <xsl:attribute name="name" select="'DC.Format'"/>
-      <xsl:attribute name="content" select="."/>
+      <xsl:attribute name="name"
+                     select="'DC.Format'"/>
+      <xsl:attribute name="content"
+                     select="."/>
     </xsl:element>
   </xsl:template>
   <xsl:template match="dc:identifier"
                 mode="oakMetadataHeader">
     <xsl:element name="meta">
-      <xsl:attribute name="name" select="'DC.Identifier'"/>
-      <xsl:attribute name="content" select="."/>
+      <xsl:attribute name="name"
+                     select="'DC.Identifier'"/>
+      <xsl:attribute name="content"
+                     select="."/>
     </xsl:element>
   </xsl:template>
   <xsl:template match="dc:source"
                 mode="oakMetadataHeader">
     <xsl:element name="meta">
-      <xsl:attribute name="name" select="'DC.Source'"/>
-      <xsl:attribute name="content" select="."/>
+      <xsl:attribute name="name"
+                     select="'DC.Source'"/>
+      <xsl:attribute name="content"
+                     select="."/>
     </xsl:element>
   </xsl:template>
   <xsl:template match="dc:language"
                 mode="oakMetadataHeader">
     <xsl:element name="meta">
-      <xsl:attribute name="name" select="'DC.Language'"/>
-      <xsl:attribute name="content" select="."/>
+      <xsl:attribute name="name"
+                     select="'DC.Language'"/>
+      <xsl:attribute name="content"
+                     select="."/>
     </xsl:element>
   </xsl:template>
   <xsl:template match="dc:relation"
                 mode="oakMetadataHeader">
     <xsl:element name="meta">
-      <xsl:attribute name="name" select="'DC.Relation'"/>
-      <xsl:attribute name="content" select="."/>
+      <xsl:attribute name="name"
+                     select="'DC.Relation'"/>
+      <xsl:attribute name="content"
+                     select="."/>
     </xsl:element>
   </xsl:template>
   <xsl:template match="dc:coverage"
                 mode="oakMetadataHeader">
     <xsl:element name="meta">
-      <xsl:attribute name="name" select="'DC.Coverage'"/>
-      <xsl:attribute name="content" select="."/>
+      <xsl:attribute name="name"
+                     select="'DC.Coverage'"/>
+      <xsl:attribute name="content"
+                     select="."/>
     </xsl:element>
   </xsl:template>
   <xsl:template match="dc:rights"
                 mode="oakMetadataHeader">
     <xsl:element name="meta">
-      <xsl:attribute name="name" select="'DC.Rights'"/>
-      <xsl:attribute name="content" select="."/>
+      <xsl:attribute name="name"
+                     select="'DC.Rights'"/>
+      <xsl:attribute name="content"
+                     select="."/>
     </xsl:element>
   </xsl:template>
   <xsl:template match="dc:title"
-                mode="oakMetadataHeader">
-  </xsl:template>
+                mode="oakMetadataHeader"/>
 
   <xsl:template match="dc:title"
-                mode="oakMetadataRow">
-
-  </xsl:template>
+                mode="oakMetadataRow"/>
 
   <xsl:template match="dc:creator"
                 mode="oakMetadataRow">
@@ -160,19 +185,13 @@
   </xsl:template>
 
   <xsl:template match="dc:subject"
-                mode="oakMetadataRow">
-
-  </xsl:template>
+                mode="oakMetadataRow"/>
 
   <xsl:template match="dc:description"
-                mode="oakMetadataRow">
-
-  </xsl:template>
+                mode="oakMetadataRow"/>
 
   <xsl:template match="dc:publisher"
-                mode="oakMetadataRow">
-
-  </xsl:template>
+                mode="oakMetadataRow"/>
 
   <xsl:template match="dc:contributor"
                 mode="oakMetadataRow">
@@ -195,14 +214,10 @@
   </xsl:template>
 
   <xsl:template match="dc:type"
-                mode="oakMetadataRow">
-
-  </xsl:template>
+                mode="oakMetadataRow"/>
 
   <xsl:template match="dc:format"
-                mode="oakMetadataRow">
-
-  </xsl:template>
+                mode="oakMetadataRow"/>
 
   <xsl:template match="dc:identifier"
                 mode="oakMetadataRow">
@@ -215,29 +230,19 @@
   </xsl:template>
 
   <xsl:template match="dc:source"
-                mode="oakMetadataRow">
-
-  </xsl:template>
+                mode="oakMetadataRow"/>
 
   <xsl:template match="dc:language"
-                mode="oakMetadataRow">
-
-  </xsl:template>
+                mode="oakMetadataRow"/>
 
   <xsl:template match="dc:relation"
-                mode="oakMetadataRow">
-
-  </xsl:template>
+                mode="oakMetadataRow"/>
 
   <xsl:template match="dc:coverage"
-                mode="oakMetadataRow">
-
-  </xsl:template>
+                mode="oakMetadataRow"/>
 
   <xsl:template match="dc:rights"
-                mode="oakMetadataRow">
-
-  </xsl:template>
+                mode="oakMetadataRow"/>
 
   <xsl:template match="text()"
                 mode="oakParagraphContent">
@@ -279,6 +284,99 @@
       <xsl:attribute name="class">
         <xsl:value-of select="@type"/>
       </xsl:attribute>
+      <xsl:apply-templates select="child::node()"
+                           mode="oakParagraphContent"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template name="oakMaybeType">
+    <xsl:choose>
+      <xsl:when test="@type">
+        <xsl:attribute name="class">
+          <xsl:value-of select="@type"/>
+        </xsl:attribute>
+      </xsl:when>
+    </xsl:choose>
+  </xsl:template>
+
+  <xsl:template match="o:Column"
+                mode="oakParagraphContent">
+    <xsl:element name="th">
+      <xsl:call-template name="oakMaybeType"/>
+      <xsl:apply-templates select="child::node()"
+                           mode="oakParagraphContent"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="o:Header"
+                mode="oakParagraphContent">
+    <xsl:element name="thead">
+      <xsl:call-template name="oakMaybeType"/>
+      <tr>
+        <xsl:apply-templates select="child::node()"
+                             mode="oakParagraphContent"/>
+      </tr>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="o:Cell"
+                mode="oakParagraphContent">
+    <xsl:element name="td">
+      <xsl:call-template name="oakMaybeType"/>
+      <xsl:apply-templates select="child::node()"
+                           mode="oakParagraphContent"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="o:Row"
+                mode="oakParagraphContent">
+    <xsl:element name="tr">
+      <xsl:call-template name="oakMaybeType"/>
+      <xsl:apply-templates select="child::node()"
+                           mode="oakParagraphContent"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="o:Body"
+                mode="oakParagraphContent">
+    <xsl:element name="tbody">
+      <xsl:call-template name="oakMaybeType"/>
+      <xsl:apply-templates select="child::node()"
+                           mode="oakParagraphContent"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="o:Table"
+                mode="oakParagraphContent">
+    <xsl:element name="table">
+      <xsl:call-template name="oakMaybeType"/>
+      <xsl:apply-templates select="child::node()"
+                           mode="oakParagraphContent"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="o:Item"
+                mode="oakParagraphContent">
+    <xsl:element name="li">
+      <xsl:call-template name="oakMaybeType"/>
+      <xsl:apply-templates select="child::node()"
+                           mode="oakParagraphContent"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="o:UnorderedList"
+                mode="oakParagraphContent">
+    <xsl:element name="ul">
+      <xsl:call-template name="oakMaybeType"/>
+      <xsl:apply-templates select="child::node()"
+                           mode="oakParagraphContent"/>
+    </xsl:element>
+  </xsl:template>
+
+  <xsl:template match="o:OrderedList"
+                mode="oakParagraphContent">
+    <xsl:element name="ol">
+      <xsl:call-template name="oakMaybeType"/>
       <xsl:apply-templates select="child::node()"
                            mode="oakParagraphContent"/>
     </xsl:element>

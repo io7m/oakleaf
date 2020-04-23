@@ -23,3 +23,21 @@
 {
   font-family: monospace;
 }
+
+.exampleData
+{
+  font-family: sans-serif;
+}
+.exampleData th
+{
+  padding-right: 2em;
+  text-align: left;
+}
+.exampleData td
+{
+  padding-right: 2em;
+}
+.exampleData td:nth-child(1)
+{
+  width: 12em;
+}

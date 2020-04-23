@@ -118,8 +118,11 @@
       <sequence minOccurs="1"
                 maxOccurs="unbounded">
         <choice>
-          <element ref="o:Verbatim"/>
           <element ref="o:Image"/>
+          <element ref="o:OrderedList"/>
+          <element ref="o:Table"/>
+          <element ref="o:UnorderedList"/>
+          <element ref="o:Verbatim"/>
         </choice>
       </sequence>
 
@@ -128,6 +131,132 @@
                  use="required"/>
       <attribute name="id"
                  type="o:uuidType"
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="Cell">
+    <complexType mixed="true">
+      <sequence minOccurs="0"
+                maxOccurs="unbounded">
+        <choice>
+          <element ref="o:FootnoteReference"/>
+          <element ref="o:Link"/>
+          <element ref="o:LinkExternal"/>
+          <element ref="o:Term"/>
+        </choice>
+      </sequence>
+
+      <attribute name="type"
+                 type="string"
+                 default=""
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="Row">
+    <complexType>
+      <sequence minOccurs="0"
+                maxOccurs="unbounded">
+        <element ref="o:Cell"/>
+      </sequence>
+
+      <attribute name="type"
+                 type="string"
+                 default=""
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="Body">
+    <complexType>
+      <sequence minOccurs="0"
+                maxOccurs="unbounded">
+        <element ref="o:Row"/>
+      </sequence>
+    </complexType>
+  </element>
+
+  <element name="Column">
+    <complexType mixed="true">
+      <attribute name="type"
+                 type="string"
+                 default=""
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="Header">
+    <complexType>
+      <sequence minOccurs="1"
+                maxOccurs="unbounded">
+        <element ref="o:Column"/>
+      </sequence>
+    </complexType>
+  </element>
+
+  <element name="Table">
+    <complexType>
+      <sequence>
+        <sequence minOccurs="0"
+                  maxOccurs="1">
+          <element ref="o:Header"/>
+        </sequence>
+        <element ref="o:Body"/>
+      </sequence>
+
+      <attribute name="type"
+                 type="string"
+                 default=""
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="Item">
+    <complexType mixed="true">
+      <sequence minOccurs="0"
+                maxOccurs="unbounded">
+        <choice>
+          <element ref="o:FootnoteReference"/>
+          <element ref="o:Link"/>
+          <element ref="o:LinkExternal"/>
+          <element ref="o:OrderedList"/>
+          <element ref="o:Term"/>
+          <element ref="o:UnorderedList"/>
+        </choice>
+      </sequence>
+
+      <attribute name="type"
+                 type="string"
+                 default=""
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="UnorderedList">
+    <complexType>
+      <sequence minOccurs="1"
+                maxOccurs="unbounded">
+        <element ref="o:Item"/>
+      </sequence>
+
+      <attribute name="type"
+                 type="string"
+                 default=""
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="OrderedList">
+    <complexType>
+      <sequence minOccurs="1"
+                maxOccurs="unbounded">
+        <element ref="o:Item"/>
+      </sequence>
+
+      <attribute name="type"
+                 type="string"
+                 default=""
                  use="optional"/>
     </complexType>
   </element>
