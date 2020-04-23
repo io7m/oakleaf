@@ -1,0 +1,191 @@
+/*
+ * Copyright © 2020 Mark Raynsford <code@io7m.com> http://io7m.com
+ *
+ * Permission to use, copy, modify, and/or distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+ * SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
+ * IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
+
+:root {
+  --oakColumnWidthLeft: 8%;
+  --oakColumnWidthMain: 92%;
+  --oakMainWidth: 50em;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+  font-family: sans-serif;
+}
+
+#oakBrandingHeader
+{
+  margin: 1em;
+  margin-top: 2em;
+}
+
+#oakBrandingFooter
+{
+  margin: 1em;
+  margin-bottom: 2em;
+}
+
+#oakHeader
+{
+  margin-left: 1em;
+  margin-bottom: 2em;
+}
+
+#oakTableOfContents
+{
+  margin-left: 1em;
+  margin-bottom: 2em;
+}
+
+#oakFootnotes
+{
+  width: var(--oakMainWidth);
+  margin-left: 1em;
+  margin-bottom: 2em;
+
+  border-top: 2px solid #aaa;
+}
+
+#oakFooter
+{
+  width: var(--oakMainWidth);
+  margin-left: 1em;
+  margin-bottom: 2em;
+
+  border-top: 2px solid #aaa;
+}
+
+#oakOverview
+{
+  width: var(--oakMainWidth);
+  margin-left: 1em;
+  margin-bottom: 2em;
+}
+
+#oakMain
+{
+  width: var(--oakMainWidth);
+  margin-left: 1em;
+  margin-bottom: 2em;
+}
+
+.oakSectionHeader
+{
+  display: flex;
+  font-family: sans-serif;
+}
+
+.oakSectionNumber
+{
+  width: var(--oakColumnWidthLeft);
+  font-family: sans-serif;
+}
+
+.oakSubsectionHeader
+{
+  display: flex;
+  font-family: sans-serif;
+}
+
+.oakSubsectionNumber
+{
+  width: var(--oakColumnWidthLeft);
+  font-family: sans-serif;
+}
+
+.oakParagraph
+{
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.oakParagraphNumber
+{
+  width: var(--oakColumnWidthLeft);
+  font-family: sans-serif;
+}
+
+.oakParagraphContent
+{
+  width: var(--oakColumnWidthMain);
+}
+
+.oakFormalItemHeader
+{
+  display: flex;
+  font-family: sans-serif;
+  margin-bottom: 1em;
+}
+
+.oakFormalItemNumber
+{
+  width: var(--oakColumnWidthLeft);
+}
+
+.oakFormalItemTitle
+{
+  font-weight: bold;
+}
+
+.oakFormalItemContent
+{
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.oakFormalItemContentMargin
+{
+  width: var(--oakColumnWidthLeft);
+  font-family: sans-serif;
+}
+
+.oakFormalItemContentMain
+{
+  width: var(--oakColumnWidthMain);
+}
+
+.oakFootnoteContainer
+{
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.oakFootnoteNumber
+{
+  width: var(--oakColumnWidthLeft);
+  font-family: sans-serif;
+}
+
+.oakFootnoteContent
+{
+  width: var(--oakColumnWidthMain);
+}
+
+.oakMetadataTable
+{
+  font-family: monospace;
+}
+
+.oakMetadataTable td:nth-child(1)
+{
+  width: 12em;
+}
+
+.oakVerbatim
+{
+  border: 1px solid #eee;
+  padding: 2em;
+  overflow: auto;
+}
