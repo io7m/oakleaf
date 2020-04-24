@@ -21,12 +21,23 @@
 :root {
   --oakColumnWidthLeft: 8%;
   --oakColumnWidthMain: 92%;
+  --oakContentColor: #202020;
+  --oakContentFont: sans-serif;
+  --oakHeaderColor: #202020;
+  --oakHeaderFont: sans-serif;
   --oakMainWidth: 50em;
+  --oakBackgroundColor: #fff;
+}
+
+body
+{
+  background-color: var(--oakBackgroundColor);
 }
 
 h1, h2, h3, h4, h5, h6
 {
-  font-family: sans-serif;
+  font-family: var(--oakHeaderFont);
+  color: var(--oakHeaderColor);
 }
 
 #oakBrandingHeader
@@ -51,6 +62,8 @@ h1, h2, h3, h4, h5, h6
 {
   margin-left: 1em;
   margin-bottom: 2em;
+
+  font-family: var(--oakContentFont);
 }
 
 #oakFootnotes
@@ -77,6 +90,9 @@ h1, h2, h3, h4, h5, h6
   width: var(--oakMainWidth);
   margin-left: 1em;
   margin-bottom: 2em;
+
+  font-family: var(--oakContentFont);
+  color: var(--oakContentColor);
 }
 
 #oakMain
@@ -89,25 +105,25 @@ h1, h2, h3, h4, h5, h6
 .oakSectionHeader
 {
   display: flex;
-  font-family: sans-serif;
+  font-family: var(--oakHeaderFont);
 }
 
 .oakSectionNumber
 {
   width: var(--oakColumnWidthLeft);
-  font-family: sans-serif;
+  font-family: var(--oakHeaderFont);
 }
 
 .oakSubsectionHeader
 {
   display: flex;
-  font-family: sans-serif;
+  font-family: var(--oakHeaderFont);
 }
 
 .oakSubsectionNumber
 {
   width: var(--oakColumnWidthLeft);
-  font-family: sans-serif;
+  font-family: var(--oakHeaderFont);
 }
 
 .oakParagraph
@@ -119,18 +135,20 @@ h1, h2, h3, h4, h5, h6
 .oakParagraphNumber
 {
   width: var(--oakColumnWidthLeft);
-  font-family: sans-serif;
+  font-family: var(--oakHeaderFont);
 }
 
 .oakParagraphContent
 {
   width: var(--oakColumnWidthMain);
+  font-family: var(--oakContentFont);
+  color: var(--oakContentColor);
 }
 
 .oakFormalItemHeader
 {
   display: flex;
-  font-family: sans-serif;
+  font-family: var(--oakHeaderFont);
   margin-bottom: 1em;
 }
 
@@ -142,6 +160,8 @@ h1, h2, h3, h4, h5, h6
 .oakFormalItemTitle
 {
   font-weight: bold;
+  font-family: var(--oakHeaderFont);
+  color: var(--oakContentColor);
 }
 
 .oakFormalItemContent
@@ -153,12 +173,14 @@ h1, h2, h3, h4, h5, h6
 .oakFormalItemContentMargin
 {
   width: var(--oakColumnWidthLeft);
-  font-family: sans-serif;
+  font-family: var(--oakHeaderFont);
 }
 
 .oakFormalItemContentMain
 {
   width: var(--oakColumnWidthMain);
+  font-family: var(--oakContentFont);
+  color: var(--oakContentColor);
 }
 
 .oakFootnoteContainer
@@ -170,12 +192,14 @@ h1, h2, h3, h4, h5, h6
 .oakFootnoteNumber
 {
   width: var(--oakColumnWidthLeft);
-  font-family: sans-serif;
+  font-family: var(--oakHeaderFont);
 }
 
 .oakFootnoteContent
 {
   width: var(--oakColumnWidthMain);
+  font-family: var(--oakContentFont);
+  color: var(--oakContentColor);
 }
 
 .oakMetadataTable
