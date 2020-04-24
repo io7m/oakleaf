@@ -19,7 +19,7 @@ oakleafBranding=$(realpath src/main/example/brand.xml)
 
 xmllint \
 --noout \
---schema target/classes/com/io7m/oakleaf/xhtml1-strict.xsd \
+--schema target/classes/org/w3c/xhtml/xhtml11.xsd \
 index.xhtml
 mv index.xhtml target/example
 

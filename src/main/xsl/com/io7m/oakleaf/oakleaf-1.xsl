@@ -26,8 +26,8 @@
   <xsl:output method="xml"
               indent="yes"
               name="xml"
-              doctype-public="-//W3C//DTD XHTML 1.0 Strict//EN"
-              doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"/>
+              doctype-public="-//W3C//DTD XHTML 1.1//EN"
+              doctype-system="http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"/>
 
   <xsl:param name="oakleafBranding"
              required="false"/>
@@ -485,8 +485,7 @@
   <xsl:template match="o:Article">
     <xsl:result-document href="index.xhtml"
                          format="xml">
-      <html xml:lang="en"
-            lang="en">
+      <html xml:lang="en">
         <head>
           <meta http-equiv="content-type"
                 content="application/xhtml+xml; charset=utf-8"/>
@@ -505,6 +504,7 @@
 
           <link rel="schema.DC"
                 href="http://purl.org/dc/elements/1.1/"/>
+
           <xsl:apply-templates select="o:Metadata/*"
                                mode="oakMetadataHeader"/>
 
@@ -547,10 +547,6 @@
           </div>
 
           <xsl:apply-templates select="o:Footnotes"/>
-
-          <div id="oakFooter">
-            <xsl:comment>Footer</xsl:comment>
-          </div>
 
           <div id="oakBrandingFooter">
             <xsl:comment>Branding Header</xsl:comment>
