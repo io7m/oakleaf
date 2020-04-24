@@ -11,7 +11,7 @@
 
   <groupId>com.io7m.oakleaf</groupId>
   <artifactId>com.io7m.oakleaf</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2-SNAPSHOT</version>
 
   <description>Oakleaf Document Schema</description>
   <name>com.io7m.oakleaf</name>
