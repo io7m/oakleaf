@@ -503,6 +503,8 @@
                 type="text/css"
                 href="document.css"/>
 
+          <link rel="schema.DC"
+                href="http://purl.org/dc/elements/1.1/"/>
           <xsl:apply-templates select="o:Metadata/*"
                                mode="oakMetadataHeader"/>
 
