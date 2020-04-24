@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+  Copyright © 2020 Mark Raynsford <code@io7m.com> http://io7m.com
+
+  Permission to use, copy, modify, and/or distribute this software for any
+  purpose with or without fee is hereby granted, provided that the above
+  copyright notice and this permission notice appear in all copies.
+
+  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+  SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
+  IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+-->
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="urn:com.io7m.oakleaf:1:0"
+        elementFormDefault="qualified"
+        xmlns:dc="http://purl.org/dc/elements/1.1/"
+        xmlns:o="urn:com.io7m.oakleaf:1:0">
+
+  <import namespace="http://purl.org/dc/elements/1.1/"
+          schemaLocation="dc.xsd"/>
+
+  <simpleType name="uuidType">
+    <annotation>
+      <documentation xml:lang="en">
+        A UUID value.
+      </documentation>
+    </annotation>
+    <restriction base="string">
+      <pattern value="[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}"/>
+    </restriction>
+  </simpleType>
+
+  <element name="Metadata">
+    <complexType>
+      <group ref="dc:elementsGroup"/>
+    </complexType>
+  </element>
+
+  <element name="Overview">
+    <complexType mixed="true"/>
+  </element>
+
+  <element name="Section">
+    <complexType>
+      <choice>
+        <sequence minOccurs="1"
+                  maxOccurs="unbounded">
+          <choice>
+            <element ref="o:Paragraph"/>
+            <element ref="o:FormalItem"/>
+          </choice>
+        </sequence>
+        <sequence minOccurs="1"
+                  maxOccurs="unbounded">
+          <element ref="o:Subsection"/>
+        </sequence>
+      </choice>
+
+      <attribute name="title"
+                 type="string"
+                 use="required"/>
+      <attribute name="id"
+                 type="o:uuidType"
+                 use="required"/>
+    </complexType>
+  </element>
+
+  <element name="Subsection">
+    <complexType>
+      <choice>
+        <sequence minOccurs="1"
+                  maxOccurs="unbounded">
+          <choice>
+            <element ref="o:Paragraph"/>
+            <element ref="o:FormalItem"/>
+          </choice>
+        </sequence>
+        <sequence minOccurs="1"
+                  maxOccurs="unbounded">
+          <element ref="o:Subsection"/>
+        </sequence>
+      </choice>
+      <attribute name="title"
+                 type="string"
+                 use="required"/>
+      <attribute name="id"
+                 type="o:uuidType"
+                 use="required"/>
+    </complexType>
+  </element>
+
+  <element name="Paragraph">
+    <complexType mixed="true">
+      <sequence minOccurs="0"
+                maxOccurs="unbounded">
+        <choice>
+          <element ref="o:FootnoteReference"/>
+          <element ref="o:Link"/>
+          <element ref="o:LinkExternal"/>
+          <element ref="o:Term"/>
+        </choice>
+      </sequence>
+
+      <attribute name="id"
+                 type="o:uuidType"
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="FormalItem">
+    <complexType mixed="true">
+      <sequence minOccurs="1"
+                maxOccurs="unbounded">
+        <choice>
+          <element ref="o:Image"/>
+          <element ref="o:OrderedList"/>
+          <element ref="o:Table"/>
+          <element ref="o:UnorderedList"/>
+          <element ref="o:Verbatim"/>
+        </choice>
+      </sequence>
+
+      <attribute name="title"
+                 type="string"
+                 use="required"/>
+      <attribute name="id"
+                 type="o:uuidType"
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="Cell">
+    <complexType mixed="true">
+      <sequence minOccurs="0"
+                maxOccurs="unbounded">
+        <choice>
+          <element ref="o:FootnoteReference"/>
+          <element ref="o:Link"/>
+          <element ref="o:LinkExternal"/>
+          <element ref="o:Term"/>
+        </choice>
+      </sequence>
+
+      <attribute name="type"
+                 type="string"
+                 default=""
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="Row">
+    <complexType>
+      <sequence minOccurs="0"
+                maxOccurs="unbounded">
+        <element ref="o:Cell"/>
+      </sequence>
+
+      <attribute name="type"
+                 type="string"
+                 default=""
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="Body">
+    <complexType>
+      <sequence minOccurs="0"
+                maxOccurs="unbounded">
+        <element ref="o:Row"/>
+      </sequence>
+    </complexType>
+  </element>
+
+  <element name="Column">
+    <complexType mixed="true">
+      <attribute name="type"
+                 type="string"
+                 default=""
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="Header">
+    <complexType>
+      <sequence minOccurs="1"
+                maxOccurs="unbounded">
+        <element ref="o:Column"/>
+      </sequence>
+    </complexType>
+  </element>
+
+  <element name="Table">
+    <complexType>
+      <sequence>
+        <sequence minOccurs="0"
+                  maxOccurs="1">
+          <element ref="o:Header"/>
+        </sequence>
+        <element ref="o:Body"/>
+      </sequence>
+
+      <attribute name="type"
+                 type="string"
+                 default=""
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="Item">
+    <complexType mixed="true">
+      <sequence minOccurs="0"
+                maxOccurs="unbounded">
+        <choice>
+          <element ref="o:FootnoteReference"/>
+          <element ref="o:Link"/>
+          <element ref="o:LinkExternal"/>
+          <element ref="o:OrderedList"/>
+          <element ref="o:Term"/>
+          <element ref="o:UnorderedList"/>
+        </choice>
+      </sequence>
+
+      <attribute name="type"
+                 type="string"
+                 default=""
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="UnorderedList">
+    <complexType>
+      <sequence minOccurs="1"
+                maxOccurs="unbounded">
+        <element ref="o:Item"/>
+      </sequence>
+
+      <attribute name="type"
+                 type="string"
+                 default=""
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="OrderedList">
+    <complexType>
+      <sequence minOccurs="1"
+                maxOccurs="unbounded">
+        <element ref="o:Item"/>
+      </sequence>
+
+      <attribute name="type"
+                 type="string"
+                 default=""
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="Link">
+    <complexType mixed="true">
+      <attribute name="target"
+                 type="o:uuidType"
+                 use="required"/>
+    </complexType>
+  </element>
+
+  <element name="LinkExternal">
+    <complexType mixed="true">
+      <attribute name="target"
+                 type="anyURI"
+                 use="required"/>
+    </complexType>
+  </element>
+
+  <element name="Term">
+    <complexType mixed="true">
+      <attribute name="type"
+                 type="string"
+                 use="required"/>
+    </complexType>
+  </element>
+
+  <element name="Image">
+    <complexType>
+      <attribute name="source"
+                 type="anyURI"
+                 use="required"/>
+      <attribute name="title"
+                 type="string"
+                 use="required"/>
+    </complexType>
+  </element>
+
+  <element name="Verbatim">
+    <complexType mixed="true"/>
+  </element>
+
+  <element name="FootnoteReference">
+    <complexType>
+      <attribute name="ref"
+                 type="o:uuidType"
+                 use="required"/>
+    </complexType>
+  </element>
+
+  <element name="Footnote">
+    <complexType mixed="true">
+      <attribute name="id"
+                 type="o:uuidType"
+                 use="optional"/>
+    </complexType>
+  </element>
+
+  <element name="Footnotes">
+    <complexType>
+      <sequence minOccurs="0"
+                maxOccurs="unbounded">
+        <element ref="o:Footnote"/>
+      </sequence>
+    </complexType>
+  </element>
+
+  <element name="Article">
+    <complexType>
+      <sequence>
+        <element ref="o:Metadata"/>
+        <element ref="o:Overview"/>
+        <choice>
+          <sequence minOccurs="1"
+                    maxOccurs="unbounded">
+            <element ref="o:Section"/>
+          </sequence>
+          <sequence minOccurs="1"
+                    maxOccurs="unbounded">
+            <choice>
+              <element ref="o:Paragraph"/>
+              <element ref="o:FormalItem"/>
+            </choice>
+          </sequence>
+        </choice>
+        <sequence minOccurs="0"
+                  maxOccurs="1">
+          <element ref="o:Footnotes"/>
+        </sequence>
+      </sequence>
+    </complexType>
+
+    <unique name="LinkableElementUnique">
+      <selector xpath=".//o:Section|.//o:Subsection|.//o:FormalItem|.//o:Paragraph|.//o:Footnote"/>
+      <field xpath="@id"/>
+    </unique>
+
+    <keyref name="LinkRefersToLinkableElement"
+            refer="o:LinkableElementUnique">
+      <selector xpath=".//o:Link"/>
+      <field xpath="@target"/>
+    </keyref>
+  </element>
+
+</schema>

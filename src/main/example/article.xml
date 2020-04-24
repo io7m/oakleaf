@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+  Copyright © 2020 Mark Raynsford <code@io7m.com> http://io7m.com
+
+  Permission to use, copy, modify, and/or distribute this software for any
+  purpose with or without fee is hereby granted, provided that the above
+  copyright notice and this permission notice appear in all copies.
+
+  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+  SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
+  IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+-->
+
+<Article xmlns="urn:com.io7m.oakleaf:1:0"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <Metadata>
+    <dc:contributor>A Contributor</dc:contributor>
+    <dc:creator>A Creator</dc:creator>
+    <dc:date>2020-04-23T10:19:25+00:00</dc:date>
+    <dc:description>An example article.</dc:description>
+    <dc:identifier>c65fa00d-0870-405e-8f13-258e5cf4992d</dc:identifier>
+    <dc:language>English</dc:language>
+    <dc:publisher>A Publisher</dc:publisher>
+    <dc:relation>A Relation</dc:relation>
+    <dc:rights>CC-0</dc:rights>
+    <dc:source>A Source</dc:source>
+    <dc:title>An Article</dc:title>
+  </Metadata>
+
+  <Overview>
+    Aliquam vulputate arcu justo, in interdum quam dignissim tincidunt. Praesent at magna convallis, porttitor erat ut,
+    aliquam enim. Donec quis enim eu felis pharetra sodales gravida at ex. Phasellus vel vulputate quam, non molestie
+    justo. Etiam ante augue, pulvinar ac sem in, convallis convallis tellus. Phasellus lacus neque, facilisis nec
+    aliquam vel, pharetra et est. Sed consequat erat ut erat rhoncus hendrerit vel et ipsum. Proin sit amet libero eget
+    metus rhoncus auctor nec a ligula. Nulla tempus cursus augue. Pellentesque semper ac neque vitae luctus. Nam nisl
+    lacus, eleifend ac consectetur quis, posuere quis tellus. Donec non libero venenatis, vehicula odio blandit, feugiat
+    elit. Vestibulum nec ligula ac neque dignissim bibendum. Sed aliquet magna elit, sit amet rutrum lacus lobortis at.
+    Fusce rutrum egestas quam. Cras rutrum mi eu mollis placerat.
+  </Overview>
+
+  <Section id="18d8fa19-fa06-43df-b0a8-0137620a7e35"
+           title="Section 1">
+    <Paragraph>
+      Integer ultrices faucibus molestie. Cras <Term type="term">dapibus</Term>, dui eget tristique rhoncus
+      <FootnoteReference ref="6fcb2ddd-07e5-4309-8fb7-92963456fb1f"/>, ipsum elit rutrum mauris, a sodales justo orci
+      vel risus. Integer egestas eros non lacus consequat, vitae condimentum diam volutpat. Duis at nisi sed nibh
+      consectetur sodales vel eget sem. Maecenas tincidunt, nisl nec tincidunt egestas, nibh ligula malesuada urna, non
+      varius tortor eros ut ex. Nunc mattis tristique nunc et commodo. Sed mattis placerat mi eget pretium. Ut quis
+      neque sed orci viverra luctus. Aliquam ullamcorper lorem libero, et mattis justo aliquam vitae. Mauris fringilla
+      finibus placerat. Curabitur pulvinar elit enim, at congue metus dignissim eu.
+    </Paragraph>
+    <Paragraph>
+      Nulla sapien nisl, pharetra eget finibus mattis, maximus commodo dui
+      <FootnoteReference ref="6fcb2ddd-07e5-4309-8fb7-92963456fb1f"/>. Aenean non elementum ligula. Proin finibus eros
+      vitae magna volutpat, sed malesuada nisi interdum. Etiam sed lectus sit amet justo dapibus placerat. In hac
+      habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+      egestas. Quisque ullamcorper semper tellus et porttitor. Fusce pellentesque turpis massa, egestas volutpat massa
+      volutpat sit amet. Suspendisse dapibus, quam a gravida faucibus, mauris ante imperdiet risus, faucibus auctor diam
+      neque ut tortor. Fusce ac orci molestie, posuere arcu et, posuere enim. Etiam at ex dui. Morbi dictum urna lectus,
+      at vulputate risus luctus sed. Phasellus a tempus arcu, lobortis ultricies felis. Maecenas congue rhoncus
+      condimentum. <Link target="472b4898-ef1b-4276-88c3-0ebec4287ce2">A Link</Link>.
+    </Paragraph>
+  </Section>
+
+  <Section id="472b4898-ef1b-4276-88c3-0ebec4287ce2"
+           title="Section 2">
+    <Subsection title="Subsection 1"
+                id="e89f7974-fd2a-422d-9cd0-4fa710bbcd0b">
+      <Paragraph id="d2136475-5828-4180-99f7-f2b71b7be88b">
+        Proin est dui, dignissim pellentesque convallis non, condimentum eu odio. Morbi in augue eu nulla tincidunt
+        accumsan non sed dui. Etiam eu sagittis eros. Vivamus nec libero tincidunt, ullamcorper elit nec, elementum
+        justo. Pellentesque at molestie ante. Aliquam mollis nec felis vitae fringilla. Nam hendrerit vehicula ante ac
+        elementum. Aenean tempus lorem ac mauris luctus laoreet. Aenean ullamcorper sit amet libero vel rutrum. Mauris
+        nec nibh ac enim imperdiet vehicula quis sed diam. Vivamus ultricies arcu ut augue venenatis, eu mollis purus
+        volutpat.
+      </Paragraph>
+
+      <FormalItem title="An item">
+        <Verbatim>
+          <xi:include href="article.xml"
+                      parse="text"/>
+        </Verbatim>
+      </FormalItem>
+
+      <FormalItem title="Woods">
+        <Image source="woods.jpg"
+               title="The Woods"/>
+      </FormalItem>
+
+      <FormalItem title="Table">
+        <Table type="exampleData">
+          <Header>
+            <Column>Column 0</Column>
+            <Column>Column 1</Column>
+            <Column>Column 2</Column>
+          </Header>
+          <Body>
+            <Row>
+              <Cell>Cell 0</Cell>
+              <Cell>Cell 1</Cell>
+              <Cell>Cell 2</Cell>
+            </Row>
+            <Row>
+              <Cell>Cell 0</Cell>
+              <Cell>Cell 1</Cell>
+              <Cell>Cell 2</Cell>
+            </Row>
+            <Row>
+              <Cell>Cell 0</Cell>
+              <Cell>Cell 1</Cell>
+              <Cell>Cell 2</Cell>
+            </Row>
+            <Row>
+              <Cell>Cell 0</Cell>
+              <Cell>Cell 1</Cell>
+              <Cell>Cell 2</Cell>
+            </Row>
+          </Body>
+        </Table>
+      </FormalItem>
+
+      <FormalItem title="Ordered List">
+        <OrderedList>
+          <Item>Item 0</Item>
+          <Item>Item 1</Item>
+          <Item>Item 2</Item>
+          <Item>Item 3</Item>
+        </OrderedList>
+      </FormalItem>
+
+      <FormalItem title="Unordered List">
+        <UnorderedList>
+          <Item>Item 0</Item>
+          <Item>Item 1</Item>
+          <Item>Item 2</Item>
+          <Item>Item 3</Item>
+        </UnorderedList>
+      </FormalItem>
+
+      <FormalItem title="Nested List">
+        <UnorderedList>
+          <Item>
+            <OrderedList>
+              <Item>Item 0</Item>
+              <Item>Item 1</Item>
+              <Item>Item 2</Item>
+              <Item>Item 3</Item>
+            </OrderedList>
+          </Item>
+          <Item>
+            <UnorderedList>
+              <Item>Item 0</Item>
+              <Item>Item 1</Item>
+              <Item>
+                <OrderedList>
+                  <Item>Item 0</Item>
+                  <Item>Item 1</Item>
+                  <Item>Item 2</Item>
+                  <Item>Item 3</Item>
+                </OrderedList>
+              </Item>
+              <Item>Item 3</Item>
+            </UnorderedList>
+          </Item>
+        </UnorderedList>
+      </FormalItem>
+
+      <Paragraph id="1594a5aa-a39b-4586-a840-f60f0aa4cc51">
+        Sed convallis nulla vitae bibendum hendrerit. Curabitur purus lacus, mollis in felis porttitor, semper
+        ullamcorper mauris. Etiam fringilla, magna vel rhoncus malesuada, leo nisl euismod arcu, sit amet scelerisque
+        magna dolor at libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit lectus ornare
+        velit pretium, at aliquam lectus ultricies. Nam placerat libero a blandit tincidunt. Sed magna odio, blandit ac
+        sodales in, tincidunt sed lacus. Proin molestie eros magna, a facilisis purus tempor quis. Integer lobortis,
+        arcu a laoreet elementum, erat massa faucibus ipsum, non luctus nisi enim et nisi. Aenean consequat congue
+        euismod. Duis ante ipsum, dignissim eget dictum vehicula, vehicula id purus
+        <FootnoteReference ref="6fcb2ddd-07e5-4309-8fb7-92963456fb1f"/>
+        <FootnoteReference ref="f4de303c-5d53-473b-ac56-09d2c8a65419"/>.
+      </Paragraph>
+    </Subsection>
+    <Subsection title="Subsection 2"
+                id="f67293d3-8fa7-4fbb-8a98-757f8b441f43">
+      <Paragraph id="de5c8e34-9025-45cf-be87-b652113b5fc1">
+        Nunc vel nibh maximus, lacinia eros in, facilisis orci. Maecenas volutpat at justo sed tempor. Etiam scelerisque
+        erat erat, eget aliquet felis sollicitudin et. Mauris luctus dapibus est, placerat interdum nibh vestibulum nec.
+        Donec dictum blandit tempor. Quisque ac risus ipsum. Mauris ex arcu, imperdiet sed varius tempor, gravida id
+        lectus. Fusce fermentum, leo vel convallis efficitur, turpis lectus egestas augue, eu volutpat tortor massa sit
+        amet elit.
+      </Paragraph>
+    </Subsection>
+  </Section>
+
+  <Footnotes>
+    <Footnote id="6fcb2ddd-07e5-4309-8fb7-92963456fb1f">
+      Nunc porttitor, nulla nec ornare commodo, nulla nulla tristique metus, accumsan aliquet justo dui ac lectus. Sed
+      blandit tellus arcu, sollicitudin malesuada justo ullamcorper in. Maecenas eget nulla hendrerit, ultrices metus
+      sed, tempor purus. Mauris tincidunt fringilla mollis. Morbi egestas ornare maximus. Mauris condimentum enim id
+      accumsan sodales. Maecenas in hendrerit nisl. Curabitur lobortis velit nisl, vel ullamcorper tortor pretium
+      pulvinar. Sed vitae posuere erat. Phasellus in nisi eget risus gravida fringilla quis quis justo. Mauris hendrerit
+      turpis magna, sit amet rhoncus eros dictum in.
+    </Footnote>
+    <Footnote id="f4de303c-5d53-473b-ac56-09d2c8a65419">
+      Sed lectus ex, tempor quis vulputate non, accumsan vel elit. Sed varius nisi sollicitudin tellus mattis hendrerit.
+      Pellentesque eu efficitur purus, ut vehicula nibh. Etiam ultricies dolor et ipsum sagittis, eget lobortis lacus
+      fermentum. Suspendisse tortor nisl, vulputate non libero vitae, mattis suscipit odio. Maecenas sollicitudin
+      imperdiet elit vel imperdiet. Nam nec mauris hendrerit, faucibus nunc sit amet, luctus eros. Donec pellentesque
+      arcu nec sem interdum lobortis. Praesent mollis, libero a lobortis accumsan, quam nisi accumsan diam, at pharetra
+      elit arcu tristique quam.
+    </Footnote>
+  </Footnotes>
+</Article>

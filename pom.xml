@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.io7m.primogenitor</groupId>
+    <artifactId>com.io7m.primogenitor.full</artifactId>
+    <version>5.0.0</version>
+  </parent>
+
+  <groupId>com.io7m.oakleaf</groupId>
+  <artifactId>com.io7m.oakleaf</artifactId>
+  <version>0.0.1</version>
+
+  <description>Oakleaf Document Schema</description>
+  <name>com.io7m.oakleaf</name>
+  <url>https://www.github.com/io7m/oakleaf</url>
+
+  <properties>
+    <io7m.api.previousVersion>0.0.1-SNAPSHOT</io7m.api.previousVersion>
+    <com.codacy.id></com.codacy.id>
+  </properties>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>src/main/css</directory>
+        <filtering>true</filtering>
+      </resource>
+      <resource>
+        <directory>src/main/xsd</directory>
+      </resource>
+      <resource>
+        <directory>src/main/xml</directory>
+        <filtering>true</filtering>
+      </resource>
+      <resource>
+        <directory>src/main/xsl</directory>
+      </resource>
+    </resources>
+
+    <plugins>
+      <!-- Generate a site -->
+      <plugin>
+        <groupId>com.io7m.minisite</groupId>
+        <artifactId>com.io7m.minisite.maven_plugin</artifactId>
+        <inherited>false</inherited>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

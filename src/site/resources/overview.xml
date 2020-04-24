@@ -1,0 +1,18 @@
+<div xmlns="http://www.w3.org/1999/xhtml">
+  <p class="shields">
+      <a href="https://travis-ci.org/io7m/oakleaf">
+         <img src="https://img.shields.io/travis/io7m/oakleaf.png?style=flat-square"
+              alt="Build status"/>
+      </a>
+      <a href="http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.io7m.oakleaf%22">
+         <img src="https://img.shields.io/maven-central/v/com.io7m.oakleaf/com.io7m.oakleaf.png?style=flat-square"
+              alt="Maven Central"/>
+      </a>
+  </p>
+
+  <p>
+    The <tt>oakleaf</tt> package implements a trivial single-page article schema
+    and an XSL stylesheet for producing XHTML pages.
+  </p>
+
+</div>
